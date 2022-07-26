@@ -1,4 +1,7 @@
 import "./style.css";
+import "./slider.css";
+import {default as createSlider} from "./slider";
+
 let content = document.getElementById('content');
 
 let createNav = (function(){
@@ -19,3 +22,5 @@ let createNav = (function(){
     content.appendChild(nav);
 
 })()
+
+content.appendChild(createSlider());
