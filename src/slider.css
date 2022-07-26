@@ -1,0 +1,8 @@
+#slider-container{
+    height: 40vh;
+    width: 100%;
+    background-color: inherit;
+    display: flex;
+    margin-top: 10vh;
+    border-bottom: solid black 2px;
+}
