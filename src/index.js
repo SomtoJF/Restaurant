@@ -7,7 +7,7 @@ let createNav = (function(){
     logo.textContent = 'pizzaPizza';
     logo.setAttribute('id', 'logo');
     let ul = document.createElement('ul');
-    let navLinks = ['HOME', 'MENU', 'CONTACT'];
+    let navLinks = ['HOME', 'MENU', 'CONTACT US'];
     let li;
     for(let i = 0; i < 3; i++){
         li = document.createElement('li');
