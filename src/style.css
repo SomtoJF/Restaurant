@@ -1,0 +1,27 @@
+body{
+    background-color: #E5E4E2;
+    padding: 0px;
+    margin: 0px;
+}
+#content{
+    height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    border-bottom: solid black 1px;
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    padding: 0px 10px;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+}
+nav ul li{
+    list-style-type: none;
+}
