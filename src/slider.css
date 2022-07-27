@@ -2,7 +2,18 @@
     height: 40vh;
     width: 100%;
     background-color: inherit;
-    display: flex;
-    margin-top: 10vh;
-    border-bottom: solid black 2px;
+    display: grid;
+    grid-template-columns: repeat(5, max(30%, 150px));
+    margin-top: 12vh;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 20px;
+    overflow-x: scroll;
+    gap: 10px;
+}
+ 
+#slider-container > div{
+    height: 95%;
+    border-radius: 15px;
+    background-color: #FFA836;
 }
