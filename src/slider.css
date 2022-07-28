@@ -15,5 +15,29 @@
 #slider-container > div{
     height: 95%;
     border-radius: 15px;
+    background-color: #FFF;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-position: center;
+}
+#slider-container > div:hover{
     background-color: #FFA836;
+}
+#slider-container > div > button{
+    background-color: #FFA836;
+    color: black;
+    font-weight: 700;
+    width: 80%;
+    height: 20%;
+    position: relative;
+    bottom: 10px;
+    border: none;
+    border-radius: 15px;
+}
+#slider-container > div:hover > button{
+    background-color: #FFF;
+    color: #FFA836;
 }
