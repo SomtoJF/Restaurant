@@ -3,12 +3,11 @@
     width: 100%;
     background-color: inherit;
     display: grid;
-    grid-template-columns: repeat(5, max(30%, 150px));
+    grid-template-columns: repeat(5, 1fr);
     margin-top: 12vh;
     justify-content: flex-start;
     align-items: center;
     padding: 0px 20px;
-    overflow-x: scroll;
     gap: 10px;
 }
  
@@ -17,7 +16,6 @@
     border-radius: 15px;
     background-color: #FFF;
     background-size: 150px;
-    background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -40,4 +38,10 @@
 #slider-container > div:hover > button{
     background-color: #FFF;
     color: #FFA836;
+}
+@media all and (max-width: 1000px) {
+    #slider-container{
+        grid-template-columns: repeat(5, max(30%, 150px));
+        overflow-x: scroll;
+    }
 }
