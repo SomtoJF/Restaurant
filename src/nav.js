@@ -1,3 +1,6 @@
+import {default as createSlider} from './slider';
+import {default as createHomeContent} from './homeContent';
+
 let createNav = function(){
     let nav = document.createElement('nav');
     let logo = document.createElement('div');
@@ -9,13 +12,21 @@ let createNav = function(){
     for(let i = 0; i < 3; i++){
         li = document.createElement('li');
         li.textContent = navLinks[i];
-        li.addEventListener('click', () => {
-            content.innerHTML = "";
-            createNav();
-            if(i < 2){
+        if(i == 0){
+            li.addEventListener('click', () =>{
+                content.innerHTML = "";
+                createNav();
                 content.appendChild(createSlider());
-            };
-        })
+                content.appendChild(createHomeContent());
+            });
+        };
+        if(i == 1){
+            li.addEventListener('click', () =>{
+                content.innerHTML = "";
+                createNav();
+                content.appendChild(createSlider());
+            });
+        };
         ul.appendChild(li);
     };
     nav.appendChild(logo);
