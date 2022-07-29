@@ -1,4 +1,5 @@
 #slider-container{
+    box-sizing: border-box;
     height: 40vh;
     width: 100%;
     background-color: inherit;
