@@ -42,3 +42,13 @@
     border: none;
     font-weight: 700;
 }
+@media all and (max-width: 1000px) {
+    #menu-container > div{
+        grid-template-columns: repeat(6, max(30%, 150px));
+        overflow-x: overlay;
+    }
+    #menu-container > div:nth-child(2){
+        grid-template-columns: repeat(4, max(30%, 150px));
+        overflow-x: overlay;
+    }
+}
