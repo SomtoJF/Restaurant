@@ -11,4 +11,19 @@
 #menu-container > div{
     height: 30%;
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+#menu-container > div > div:first-child{
+    background-color: inherit;
+    font-family: 'Lobster', fantasy, sans-serif;
+}
+#menu-container > div > div{
+    background-color: white;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
