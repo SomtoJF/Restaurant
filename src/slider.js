@@ -13,7 +13,7 @@ let createSlider = function (){
         let sliderItem = document.createElement('div');
         sliderItem.style.backgroundImage = `url(${backgroundImages[i]})`;
         let pizza = document.createElement('button');
-        pizza.textContent = pizzaTypes[i];
+        pizza.textContent = pizzaTypes[i]; 
         sliderItem.appendChild(pizza);
         sliderContainer.appendChild(sliderItem);
     }
