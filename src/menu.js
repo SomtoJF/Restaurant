@@ -9,6 +9,23 @@ import juice from './drinks/juice.png';
 import smoothie from './drinks/smoothie.png';
 import yoghurt from './drinks/yoghurt.png';
 
+let createButton = function () {
+    let button = document.createElement('button');
+    button.textContent = '+';
+    button.style.textAlign = 'center';
+    button.addEventListener('click', () => {
+        if(button.style.backgroundColor == '#FFA836'){
+            button.style.backgroundColor = 'white';
+            smallerContainer[i].style.backgroundColor = '#FFA836';
+        }
+        else{
+            button.style.backgroundColor = '#FFA836';
+            smallerContainer[i].style.backgroundColor = 'white';
+        };
+    })
+    return button;
+};
+
 let createMenu = function (){
     let toppings = [pepperoni, cheese, mushroom, tomato, veggies];
     let sizes = ['Small', 'Medium', 'Large'];
@@ -24,6 +41,15 @@ let createMenu = function (){
             for(let j = 0; j < toppings.length; j++){
                 let toppingsDiv = document.createElement('div');
                 toppingsDiv.style.backgroundImage = `url(${toppings[j]})`;
+                
+                toppingsDiv.addEventListener('click', function (){
+                    if(toppingsDiv.style.backgroundColor == 'white'){
+                        toppingsDiv.style.backgroundColor = '#FFA836';
+                    }
+                    else{
+                        toppingsDiv.style.backgroundColor = 'white';
+                    }
+                });
                 smallerContainer.appendChild(toppingsDiv);
             };
         };
@@ -33,6 +59,15 @@ let createMenu = function (){
             for(let j = 0; j < sizes.length; j++){
                 let toppingsDiv = document.createElement('div');
                 toppingsDiv.textContent = `${sizes[j]}`;
+
+                toppingsDiv.addEventListener('click', function (){
+                    if(toppingsDiv.style.backgroundColor == 'white'){
+                        toppingsDiv.style.backgroundColor = '#FFA836';
+                    }
+                    else{
+                        toppingsDiv.style.backgroundColor = 'white';
+                    }
+                });
                 smallerContainer.appendChild(toppingsDiv);
             };
         };
@@ -42,6 +77,15 @@ let createMenu = function (){
             for(let j = 0; j < drinks.length; j++){
                 let toppingsDiv = document.createElement('div');
                 toppingsDiv.style.backgroundImage = `url(${drinks[j]})`;
+
+                toppingsDiv.addEventListener('click', function (){
+                    if(toppingsDiv.style.backgroundColor == 'white'){
+                        toppingsDiv.style.backgroundColor = '#FFA836';
+                    }
+                    else{
+                        toppingsDiv.style.backgroundColor = 'white';
+                    }
+                });
                 smallerContainer.appendChild(toppingsDiv);
             };
         };
