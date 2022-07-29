@@ -1,0 +1,14 @@
+#menu-container{
+    box-sizing: border-box;
+    height: 40vh;
+    width: 100%;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+#menu-container > div{
+    height: 30%;
+    width: 100%;
+}
