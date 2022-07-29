@@ -1,5 +1,6 @@
 import {default as createSlider} from './slider';
 import {default as createHomeContent} from './homeContent';
+import {default  as createMenu} from './menu';
 
 let createNav = function(){
     let nav = document.createElement('nav');
@@ -25,6 +26,7 @@ let createNav = function(){
                 content.innerHTML = "";
                 createNav();
                 content.appendChild(createSlider());
+                content.appendChild(createMenu());
             });
         };
         ul.appendChild(li);
