@@ -1,6 +1,7 @@
 import {default as createSlider} from './slider';
 import {default as createHomeContent} from './homeContent';
 import {default  as createMenu} from './menu';
+import {default as createContacts} from './contact';
 
 let createNav = function(){
     let nav = document.createElement('nav');
@@ -28,6 +29,13 @@ let createNav = function(){
                 content.appendChild(createSlider());
                 content.appendChild(createMenu());
             });
+        };
+        if(i == 2){
+            li.addEventListener('click', () => {
+                content.innerHTML = "";
+                createNav();
+                content.appendChild(createContacts());
+            })
         };
         ul.appendChild(li);
     };
