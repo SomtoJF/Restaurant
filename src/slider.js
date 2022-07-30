@@ -3,6 +3,7 @@ import image2 from './image2.png';
 import image3 from './image3.png';
 import image4 from './image4.png';
 import image5 from './image5.png';
+import "./slider.css";
 let createSlider = function (){
     let sliderContainer = document.createElement('div');
     sliderContainer.setAttribute('id', 'slider-container');

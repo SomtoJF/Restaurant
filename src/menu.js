@@ -8,6 +8,7 @@ import fanta from './drinks/fanta.png';
 import juice from './drinks/juice.png';
 import smoothie from './drinks/smoothie.png';
 import yoghurt from './drinks/yoghurt.png';
+import "./menu.css";
 
 let createButton = function () {
     let button = document.createElement('button');
