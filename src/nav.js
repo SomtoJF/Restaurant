@@ -2,6 +2,7 @@ import {default as createSlider} from './slider';
 import {default as createHomeContent} from './homeContent';
 import {default  as createMenu} from './menu';
 import {default as createContacts} from './contact';
+let content = document.getElementById('content');
 
 let createNav = function(){
     let nav = document.createElement('nav');
@@ -17,6 +18,7 @@ let createNav = function(){
         if(i == 0){
             li.addEventListener('click', () =>{
                 content.innerHTML = "";
+                content.style.backgroundImage = 'none';
                 createNav();
                 content.appendChild(createSlider());
                 content.appendChild(createHomeContent());
@@ -25,6 +27,7 @@ let createNav = function(){
         if(i == 1){
             li.addEventListener('click', () =>{
                 content.innerHTML = "";
+                content.style.backgroundImage = 'none';
                 createNav();
                 content.appendChild(createSlider());
                 content.appendChild(createMenu());
